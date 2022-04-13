@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Login from './Imagens/Login.png'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <div> 
+        <h1>TODOFLIX</h1>          
+          <h2>Inicio</h2>
+            <details>
+               <summary>
+                 Categoria
+               </summary>
+                <li>Todos</li>            
+                <li>Favoritos</li>
+                <li>Já Vistos </li>
+                <li>Adcionados</li>                
+            </details>  
+            <button>Adicionar filme</button>   
+            <input type="text" name="text"/>   
+            <img src={Login} alt="Login"></img>
+            <details>
+              <summary> </summary>
+            <label for="Login">Login</label>
+            <input id="Login"  type="text" name="text"/> 
+            <label for="Senha">Senha</label>
+            <input id="Senha" type="password" name="password"/>               
+            </details>  
+              
+       </div>
+    );
+  }
 }
-
-export default App;
