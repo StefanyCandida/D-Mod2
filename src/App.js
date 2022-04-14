@@ -17,14 +17,14 @@ export default class App extends React.Component {
                 <li>Adcionados</li>                
             </details>  
             <button>Adicionar filme</button>   
-            <input type="text" name="text"/>   
+            <input type="text" name="text" placeholder="Buscar filme"/>   
             <img src={Login} alt="Login"></img>
             <details>
               <summary> </summary>
             <label for="Login">Login</label>
             <input id="Login"  type="text" name="text"/> 
             <label for="Senha">Senha</label>
-            <input id="Senha" type="password" name="password"/>               
+            <input id="Senha" type="password" name="password"/>             
             </details>  
               
        </div>
